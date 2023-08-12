@@ -1,4 +1,6 @@
-# What is React Native?
+# Section 01 - Getting Started
+
+## What is React Native?
 
     - Related to React.js
     - It helps us to write React Native (Real Native Mobile Apps), for Android and iOS.
@@ -60,3 +62,21 @@
     - For Android we can install Android Studio.
         - Create an Android Virtual Device (AVD).
     - For iOS, we need a MAC otherwise we can't run or deploy applications for iOS.
+
+## About this Course
+
+    - Knowledge about JavaScript and React.js (Refreshers).
+    - Essentials
+        - Basics and Fundamental.
+        - Dynamic and Adaptive Layouts.
+        - Navigation.
+    - React and React Native.
+        - Redux and React Native.
+        - Complete Example App.
+        - Handling User Input.
+        - Http Requests.
+    - Advanced.
+        - User Authentication.
+        - Native Device Fatures.
+        - Push Notifications.
+        - Publising Apps.
