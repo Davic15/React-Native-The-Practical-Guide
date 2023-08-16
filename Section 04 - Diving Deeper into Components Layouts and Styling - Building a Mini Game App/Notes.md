@@ -137,3 +137,32 @@
 
         - Another package is: expo install expo-app-loading.
         - It provides a splash screen (loading screen) till a condition is met.
+
+## Adding a (Foreground) Image
+
+    - The percentages are placed in the container of the image, it means in the image.
+
+## Using and styling nested text
+
+    - Text component can contain other Text components.
+    - We can style the inner Text component as we want.
+
+## Adding logic to Re-start games and displaying summary
+
+    - A new button when the game ends.
+
+## Logging Game Rounds
+
+    - The implementation is with FlatList.
+
+## Outputting Log Data with FlatList
+
+    - Added FlatList.
+
+## Styling The Game Round Logs
+
+    - An extra component with the list.
+
+## Finishing Touches
+
+    - Adding some extra styles.
