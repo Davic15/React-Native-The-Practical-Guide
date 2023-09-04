@@ -9,3 +9,5 @@
     - The token is saved in the device.
 
 ## Backend Setup
+
+AsyncStorage
