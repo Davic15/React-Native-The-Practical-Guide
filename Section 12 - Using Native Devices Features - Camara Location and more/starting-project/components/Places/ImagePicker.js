@@ -9,15 +9,17 @@ import { Colors } from '../../constants/colors';
 import { OutlinedButton } from '../UI/OutlinedButton';
 
 export const ImagePicker = () => {
+    const [pickedImage, setPickedImage] = useState();
+
     const [cameraPermissionInformation, requestPermission] =
         useCameraPermissions();
-    const [pickedImage, setPickedImage] = useState();
 
     const verifyPermissions = async () => {
         if (
             cameraPermissionInformation.status === PermissionStatus.UNDETERMINED
         ) {
             const permissionResponse = await requestPermission();
+
             return permissionResponse.granted;
         }
 
@@ -34,6 +36,7 @@ export const ImagePicker = () => {
 
     const takeImageHandler = async () => {
         const hasPermission = await verifyPermissions();
+
         if (!hasPermission) {
             return;
         }
@@ -43,6 +46,8 @@ export const ImagePicker = () => {
             aspect: [16, 9],
             quality: 0.5,
         });
+
+        //setPickedImage(image.uri);
         setPickedImage(image.assets[0].uri);
     };
 
@@ -73,6 +78,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: Colors.primary100,
         borderRadius: 4,
+        overflow: 'hidden',
     },
     image: {
         width: '100%',
