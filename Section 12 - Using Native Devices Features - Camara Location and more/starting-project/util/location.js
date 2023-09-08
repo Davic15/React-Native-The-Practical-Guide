@@ -1,4 +1,3 @@
-//const API_KEY = 'a10882d5388846c3b80dabde615feef9';
 import { API_KEY } from '@env';
 
 export const getMapPreview = (lat, lon) => {
